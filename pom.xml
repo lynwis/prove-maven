@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.prove</groupId>
   <artifactId>prove-maven</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   
   <!-- se non specifico il tag "scope", le dipendenze hanno lo scope di default "compile" -->
   <dependencies>
@@ -24,7 +24,7 @@
 	</dependency>
   </dependencies>
   
-    <build>		<!-- tutto ciò che modifica il build process, si trova tra i tag "build" -->
+    <build>		<!-- tutto ciï¿½ che modifica il build process, si trova tra i tag "build" -->
     <plugins>	<!-- questo include anche eventuali plugin che vogliamo utilizzare per modificare il comportamento del processo -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
