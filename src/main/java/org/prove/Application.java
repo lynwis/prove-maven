@@ -2,6 +2,7 @@ package org.prove;
 
 import java.util.List;
 import java.util.ArrayList;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
 	
@@ -14,9 +15,14 @@ public class Application {
 		
     }
 	
+	public int countWords(String text) {
+		String[] words = StringUtils.split(text, ' ');
+		return (words == null) ? 0 : words.length;
+	}
+	
 	public void listAllItems() {
 		for (String s : lista) {
-			System.out.println(s);
+			System.out.println(s + " (" + countWords(s) + ")");
 		}
 	}
 
@@ -24,6 +30,8 @@ public class Application {
     	System.out.println ("Starting Application");
 		Application app = new Application();
 		app.listAllItems();
+		
+		
 		
     }
 }

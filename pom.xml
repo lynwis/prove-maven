@@ -8,6 +8,14 @@
   <artifactId>prove-maven</artifactId>
   <version>1.0</version>
   
+  <dependencies>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.5</version>
+	</dependency>
+  </dependencies>
+  
     <build>		<!-- tutto ciò che modifica il build process, si trova tra i tag "build" -->
     <plugins>	<!-- questo include anche eventuali plugin che vogliamo utilizzare per modificare il comportamento del processo -->
       <plugin>
